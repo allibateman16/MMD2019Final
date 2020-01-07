@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+
+@media (min-width: 800px) (max-width: 2000px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header header"
+            "page_title page_title page_title page_title"
+            ". main main ."
+            "footer footer footer footer";
+    }
+
+    .responsive {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px)(max-width:799px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header header header header"
+            "page_title page_title page_title page_title"
+            "main main main main"
+            "footer footer footer footer";
+    }
+
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media (min-width:100px) (max-width:599px) {
+    body {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-areas:
+            "header header"
+            "page_title page_title"
+            "main main"
+            "footer footer"
+    }
+}
+
+
+
+
+body {
+    background: #b5f2ef;
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 1080px;
+    padding: 2em 2em 4em;
+}
+
+a:any-link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f2a399;
+}
+
+nav ul {
+    Position: relative;
+    Display: flex;
+    Flex-flow: row;
+    List-style-type: none;
+    Background-color: #07ddd2;
+    padding: 5px 0px;
+    color: white;
+}
+
+li a {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+h1 {
+    background-color: #f2a399;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    color: black;
+    border-bottom: #f2a399;
+    border-bottom-width: initial;
+    border-bottom-style: solid;
+}
+
+img {
+    background: transparent;
+    border-radius: 4px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+}
+
+.thumbnail img {
+    height: 250px;
+    width: 400px;
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.thumbnail-smaller img {
+    height: 250px;
+    width: 300px;
+    float: left;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.thumbnail {
+    display: inline-block;
+}
+
+figure {
+    position: absolute;
+}
+
+
+/*
+.mySlides {
+    height: 450px;
+    width: 800px;
+}
+
+.mySlides1 {
+    height: 500px;
+    width: 225px;
+}
+*/
+
+
+.thumbnail {
+    border-bottom: #07ddd2;
+    border-bottom-width: initial;
+    border-bottom-style: solid;
+}
+
+/*
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+*/
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.me {
+  display: block;
+    height: 300px;
+    width: 650px;
+    padding: 30px;
+    margin: 30px;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 50%;
+}
+
+.responsive1 {
+    padding: 0 6px;
+    float: left;
+    width: 33.33%;
+}
+
+.responsive2{
+    padding: 0 6px;
+    float: left;
+    width: 16.66%;
+}
+
+.responsive3{
+    display: block;
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+footer{
+     Position: relative;
+    Display: flex;
+     Background-color: #07ddd2;
+    height: 30px;
+}
+*/
+
+.social {
+    background: #07ddd2;
+ display: inline-block;
+ position:relative;
+ bottom:0;
+ right:0;
+ padding:6px;
+height: 30px;
+    width: auto;
+}
