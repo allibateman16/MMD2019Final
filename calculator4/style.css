@@ -1,0 +1,44 @@
+
+body {
+  padding: 30%;
+  margin: 0;
+  background: linear-gradient(to right, black, brown);
+}
+
+.calc {
+    display: grid;
+    grid-template-columns:;
+  grid-template-rows: minmax(100px, 10) repeat(5,0px);
+    position: absolute;
+    background: gray;
+    width: 300px;
+    height: 370px;
+    color: white;
+}
+
+#disp {
+ grid-column: span 4;
+    height: 52px;
+    background-color: black;
+    margin: 15px;
+    color: white;
+}
+
+.calc button {
+
+    height: 45px;
+    width: 50px;
+    background-color: black;
+    margin: 5px 5px 5px 15px;
+    color: white;
+
+}
+
+#equals {
+    display: grid;
+    width: 275px;
+    grid-column: span 4;
+}
+
+
+
