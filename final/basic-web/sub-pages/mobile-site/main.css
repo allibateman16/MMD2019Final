@@ -1,0 +1,141 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+
+body {
+    font-family: "Helvetica", regular, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+
+nav ul {
+    Position: relative;
+    Display: flex;
+    Flex-flow: row;
+    List-style-type: none;
+    Background-color: #35abcf;
+    padding: 5px 0px;
+    color: white;
+}
+
+li a {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {background-color: #f7e911;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+h2 { font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h3 {font-family: "Helvetica", regular, sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+p {
+    font-family: "Helvetica", Helvetica, regular, sans-serif;
+    font-size: 16px;
+    color: #000000; line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+
+}
+
+aside { float: right;
+    margin-top: 25px;
+    margin-bottom:25px;
+    margin-right: 20px;
+    margin-left: 5px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 5px 10px 2px #576068;
+    color: #000000;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #576068;
+    width: 300px;
+}
+
+.border {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    display: block;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 5px 10px 2px #576068;
+    color: #000000;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #576068;
+
+}
+
+
+img {
+    Position: relative;
+    Display: flex;
+    Flex-flow: row;
+}
+
+hr {
+    color: black;
+}
+
+html{
+     background-attachment: fixed;
+    background-color: white;
+    background-image: url(Images/webiste-design/ssd-background.png)
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.col_4{
+    float: left;
+    width: 33.33%;
+}
+
+.col_6{
+    float: left;
+    width: 50%;
+}
+
+figcaption ul {
+
+    List-style-type: none;
+}
