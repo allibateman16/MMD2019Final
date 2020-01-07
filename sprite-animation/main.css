@@ -1,0 +1,77 @@
+/*
+
+.background {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('background.svg');
+    background-size: cover;
+    background-position: 50% 100%;
+
+}
+
+
+.Charlie {
+    height:655px;
+    width:255px;
+    background-image: url('new-char_sprite-walking.svg');
+    animation: coffee 3s infinite steps(15);
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+}
+
+.wrap {
+    animation: move 10s infinite linear;
+    position: absolute;
+    bottom: 150px;
+    left:  0%;
+
+}
+
+@keyframes coffee {
+    to {
+        background-position-x: calc(-255px*15);
+    }
+}
+*/
+
+.background {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('background.svg');
+    /** background-repeat: no-repeat; **/
+ background-size: cover;
+    background-position: 50% 100% ;
+
+}
+
+.wrap {
+    animation: moves 7s infinite linear;
+    position: absolute;
+    bottom:0px;
+    left:  0px;
+}
+
+.Charlie {
+    width: 245px;
+    height: 655px;
+    background-image: url('new-char-sprite-animation.svg');
+    background-size: auto 100%;
+    animation: walk 7s infinite steps(15);
+    transform: translate (100%);
+}
+
+@keyframes walk {
+    to {
+        background-position-x: calc(-270px*15);
+    }
+
+}
+
+@keyframes moves {
+    to {
+        transform: translateX(100vw);
+    }
+}
