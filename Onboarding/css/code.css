@@ -1,0 +1,111 @@
+.typing {
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    font-size: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.one {
+    animation: type 0.5s;
+}
+
+.two {
+    animation: type 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+.three {
+    animation: type 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+.four {
+    animation: type 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+}
+
+.five {
+    animation: type 3s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+}
+
+.six {
+    animation: type 2.5s;
+    animation-delay: 5.5s;
+    animation-fill-mode: both;
+}
+
+.seven {
+    animation: type 1s;
+    animation-delay: 6.3s;
+    animation-fill-mode: both;
+}
+
+.eight {
+    animation: type 3s;
+    animation-delay: 8s;
+    animation-fill-mode: both;
+}
+
+.nine {
+    animation: type 2s;
+    animation-delay: 8.5s;
+    animation-fill-mode: both;
+}
+
+.ten {
+    animation: type 1s;
+    animation-delay: 10s;
+    animation-fill-mode: both;
+}
+
+.eleven {
+    animation: type 1s;
+    animation-delay: 10.5s;
+    animation-fill-mode: both;
+}
+
+.twelve {
+    animation: type 2s;
+    animation-delay: 11.5s;
+    animation-fill-mode: both;
+}
+
+.thirteen {
+    animation: type 1s;
+    animation-delay: 13.5s;
+    animation-fill-mode: both;
+}
+
+.fourteen {
+    animation: type 1.5s;
+    animation-delay: 14.5s;
+    animation-fill-mode: both;
+}
+
+.fifteen {
+    animation: type 1s;
+    animation-delay: 15.5s;
+    animation-fill-mode: both;
+}
+
+.sixteen {
+    animation: type 1s;
+    animation-delay: 16.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+    }
+    100% {
+        width: 23ch;
+    }
+}
