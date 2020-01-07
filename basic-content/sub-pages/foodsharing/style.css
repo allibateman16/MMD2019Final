@@ -1,0 +1,434 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+        color: #343434;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a{
+    color: #343434;
+}
+
+.wrapper {
+    height: 120vh;
+    width: 99vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'header'
+        'video'
+        'about'
+        'events'
+        'facts'
+        'foodsaving'
+        'favorites'
+        'footer';
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #343434;
+}
+
+article.accordion {
+    display: flex;
+    width: 100%;
+    height: 34em;
+    margin: 0 auto;
+    overflow: hidden;
+    justify-content: center;
+/*
+    background-color: #48C3C4;
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.75);
+*/
+}
+
+article.accordion section {
+    position: relative;
+    display: block;
+    float: left;
+    height: 33em;
+    margin: 0.5em 0 0.5em 0.5em;
+    color: #48C3C4;
+    background-color: #48C3C4;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+article.accordion section h2 {
+    position: absolute;
+    font-size: 2em;
+    font-weight: bold;
+    width: 10em;
+    height: 2em;
+    top: 12em;
+    left: 0;
+    text-indent: 1em;
+    padding: 0;
+    margin: 0;
+/*    color: #ddd;*/
+    color: white;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+article.accordion section p{
+    font-size: 5px;
+    max-width: 50px;
+}
+
+article.accordion section h2 a {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-decoration: none;
+    color: inherit;
+    outline: 0 none;
+}
+
+article.accordion section:target {
+    width: 20em;
+    padding: 0 1em;
+    color: #296975;
+    background-color: #A8F3F4;
+}
+
+article.accordion section:target p{
+    font-size: 15px;
+    max-width: 300px;
+}
+
+article.accordion section:target h2 {
+    position: static;
+    font-size: 2em;
+    padding-bottom: 0px;
+    text-indent: 0;
+    color: #296975;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+article.accordion section,
+article.accordion section h2 {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.accordionP{
+    font-size: 15px;
+    padding-left: 10px;
+    margin: 2px;
+}
+
+h3{
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.wrapper > div {}
+
+
+#video {
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.embedVideo {}
+
+.videoMenuDiv {
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.75);
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-10vh);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+    height: 20vh;
+    width: 45vw;
+    animation: 2s normal forwards;
+}
+
+@keyframes videoMenuFadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes videoMenuFadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#videoMenu2 {
+    background-color: darkorange;
+}
+
+.videoMenuDiv > div {
+    cursor: pointer;
+    color: #343434;
+    flex-grow: 1;
+    width: 5px;
+    padding: 5px;
+}
+
+.videoMenuh {
+    font-size: 30px;
+    text-align: center;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+}
+
+.videoMenup {
+    font-size: 20px;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+.headerDiv {
+    font-family: 'Amatic SC', cursive;
+    grid-area: header;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 260px;
+    padding: 20px;
+    }
+
+.headerDiv > h1 {
+        font-family: 'Amatic SC', cursive;
+    font-size: 5em;
+    margin: 5px;
+}
+
+.videoDiv {
+    grid-area: video;
+    background-color: white;
+    height: 100vh;
+}
+
+.aboutDiv {
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.75);
+    padding: 20px 8vw;
+    margin-bottom: 55px;
+    grid-area: about;
+    background-color: #48C3C4;
+}
+
+.aboutText {
+    margin-top: 80px;
+}
+
+.aboutImg {
+    box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+    height: 35vh;
+    margin: 0px 50px 25px 0px;
+}
+
+.eventsDiv {
+    padding: 20px 8vw;
+    grid-area: events;
+    margin-bottom: 75px;
+}
+
+.eventImgWrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50vh;
+}
+
+.eventItem {
+    padding: 25px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    vertical-align: top;
+    text-align: center;
+    display: block;
+    width: 15vw;
+    transition: 0.3s;
+}
+
+.eventItemh1{
+    font-size: 25px;
+    color: white;
+}
+
+.eventItemFbBtn{
+    margin-top: 110px;
+    height: 100px;
+}
+
+.eventItem:hover {
+    width: 25vw;
+    filter: blur(0px);
+}
+
+#eventItem1 {
+    background-image: url("img/eventsimg1.png");
+    background-position: center;
+}
+
+#eventItem2 {
+    background-image: url("img/eventsimg2.png");
+    background-position: center;
+}
+
+#eventItem3 {
+    background-image: url("img/eventsimg3.png");
+  background-position: center;
+
+}
+
+#eventItem3FbBtn{
+    margin-top: 140px;
+}
+
+.eventImg {
+    height: 90%;
+}
+
+.eventCaption {
+    color: white;
+    display: block;
+}
+
+.factsDiv {
+    padding: 20px 8vw;
+    grid-area: facts;
+    margin-bottom: 55px;
+    background-color: orange;
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.75);
+}
+
+.factsImg{
+    display: block;
+    margin: 25px;
+    margin-left: 100px;
+    margin-top: 160px;
+    height: 50vh;
+    float: right;
+        box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.55);
+
+
+}
+
+.foodsavingDiv {
+    padding: 20px 8vw;
+    grid-area: foodsaving;
+    margin-bottom: 55px;
+}
+
+.favoritesDiv {
+    padding: 20px 8vw;
+    grid-area: favorites;
+    height: 100vh;
+}
+
+.favImgWrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+.favItem {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 420px;
+}
+
+.favCaption {
+    display: block;
+}
+
+.favImg {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.favBtn {
+	box-shadow: 0px 0px 10px 0px #bfbfbf;
+	background-color:#343434;
+	border:1px solid #5ecccc;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+    margin-top:20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+.favBtn:hover {
+	background-color:#59e6e6;
+}
+.favBtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+.footerDiv {
+    grid-area: footer;
+    background-color: #343434;
+    height: 15vh;
+    color: white;
+    padding: 75px;
+}
+
+.googlePlaybtn{
+    display:inline-block;
+    height: 80px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+.appleStorebtn{
+    display:inline-block;
+    height: 80px;
+    width: 200px;
+    border-radius: 10px;
+}

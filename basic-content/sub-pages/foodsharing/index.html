@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copenhagen Foodsharing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="headerDiv">
+            <a href="https://foodsharingcph.org/"><img src = "img/logo.png"></a>
+        </div>
+        <div class="videoDiv">
+            <div class="embedVideo">
+                <!--
+                <iframe id="promoVideo" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+-->
+                <div id="video"></div>
+            </div>
+            <div class="videoMenuDiv" id="videoMenuDiv">
+                <div id="videoMenu1" onclick="scrollto(0, 1550);">
+                    <h1 class="videoMenuh">Events</h1>
+                </div>
+                <div id="videoMenu2" onclick="scrollto(0, 3050);">
+                    <h1 class="videoMenuh">Foodsaving</h1>
+                </div>
+                <div id="videoMenu3" onclick="scrollto(0, 3850);">
+                    <h1 class="videoMenuh">Our Favorites</h1>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="aboutDiv" id="aboutDiv">
+            <h1>Who are we</h1>
+            <img class="aboutImg" src="img/aboutpic.jpg" align="left" />
+            <div class="aboutText">
+                <p>Foodsharing is a part of who we are as people as well as the organization as a whole. So far our journey has been very fluid and organic. Many passionate people have joined the movement and given their hearts towards building a more sharing and caring community. Without them we would not be here, likewise current activists are building the future of Foodsharing Copenhagen.</p>
+            </div>
+        </div>
+        <div class="eventsDiv">
+            <h1>Events</h1>
+            <p>We have events every week, click below to see more information.</p>
+            <div class="eventImgWrapper">
+                <div class="eventItem" id="eventItem1">
+                    <h1 class="eventItemh1">Foodsharing in Norrebro</h1>
+                    <a href="https://www.facebook.com/events/443535586589461/"><img src="img/facebooklogo.png" class="eventItemFbBtn"></a>
+                </div>
+                <div class="eventItem" id="eventItem2">
+                    <h1 class="eventItemh1">Foodsharing in Sydhavn</h1>
+                    <a href="https://www.facebook.com/events/2787660311314283/"><img src="img/facebooklogo.png" class="eventItemFbBtn"></a>
+                </div>
+                <div class="eventItem" id="eventItem3">
+                    <h1 class="eventItemh1">Special events</h1>
+                    <a href="https://www.facebook.com/pg/FoodsharingCopenhagen/events/"><img src="img/facebooklogo.png" class="eventItemFbBtn" id="eventItem3FbBtn"></a>
+                </div>
+            </div>
+            <p style="text-align: center;">Would you like to help out at one of our events?<br> <a href="https://foodsharingcph.org/join-us/">Click here</a> to learn more about how you can help</p>
+        </div>
+        <div class="factsDiv">
+            <img src="img/factsimg.jpg" class="factsImg">
+            <h1>Facts</h1>
+            <p>
+                In Denmark alone, 700,000 tons of food is wasted each year that could have been eaten. The food waste costs Danish consumers more than 11 billion DKK a year. The households waste more than 260,000 tons of food per year and the food industry 133,000 tons. That is why food waste is a huge problem, which is not only expensive, but also exhausting of our resources and our environment.<br><br>
+
+                One of the biggest reasons people throw away food is they don't know the difference between "sell before"(best before), "best by", and "use by" dates. The "use by" date is the one to pay attention to! This date tells you when the food is no longer safe to consume. However, the "sell before" and "best by" dates are actually best guesses as to food quality—not food safety. It is likely perfectly safe to eat for days or weeks after that "sell-by" or "best-by" date has passed. So even if your eggs say they are "best by" a certain date, they don’t suddenly turn rotten at midnight.</p>
+
+        </div>
+        <div class="foodsavingDiv">
+            <h1>Foodsaving</h1>
+            <p>Click on the cards below to see facts about different types of foods</p>
+            <article class="accordion">
+
+                <section id="acc1">
+                    <h2><a href="#acc1">Bread</a></h2>
+                    <h3>Shelf Life:</h3>
+                    <p class="accordionP"> Bakery bread: 2-3 days past bbd (Best Before Date)
+                        <br>Plain bread: 5-7 days past bbd</p>
+                    <h3>Storage:</h3>
+                    <p class="accordionP"> Room temperature
+                        (not in the fridge!)
+                        <h3>Freeze:</h3>
+                        <p class="accordionP"> Airtight container
+                            <h3>Is it okay?</h3>
+                            <p class="accordionP"> <b>Mold?</b> - Not safe to eat<br>
+                                <b>Stale?</b> - Dip in a bowl of water,
+                                or run under a sink until the bread is all wet (not soaked) and put in the oven for 5-8 min
+                                at around 210°C</p>
+
+                </section>
+                <section id="acc2">
+                    <h2><a href="#acc2">Milk</a></h2>
+                    <h3>Shelf Life:</h3>
+                    <p class="accordionP"> 4-7 days past best before date</p>
+                    <h3>Storage:</h3>
+                    <p class="accordionP"> Fridge shelf under 4.5°C
+                        <h3>Freeze:</h3>
+                        <p class="accordionP"> Airtight container
+                            (remember liquid expands when frozen)
+                            Thaw in fridge
+                            Use for cooking or baking
+                            <h3>Is it okay?</h3>
+                            <p class="accordionP"> <b>Mold?</b> - Not safe to eat :( <br>
+                                <b>Stale?</b> - Not safe to drink but good for cooking and baking. But use your judgement, if you think it's too bad don't use it.</p>
+                </section>
+                <section id="acc3">
+                    <h2><a href="#acc3">Cheese</a></h2>
+                    <h3>Shelf Life:</h3>
+                    <p class="accordionP"> Hard cheese: 4–6 m in a fridge.<br>
+                        Medium hard cheese: 2–4 w after expiration date.<br>
+                        Soft cheese: They will have “use by date”.</p>
+                    <h3>Storage:</h3>
+                    <p class="accordionP"> Fridge shelf
+                        <h3>Freeze:</h3>
+                        <p class="accordionP"> Grated cheese is perfect to freeze.
+                            <h3>Is it okay?</h3>
+                            <p class="accordionP"> <b>Mold on soft cheese?</b> - Whole thing is bad.<br>
+                                <b>Mold on hard cheese?</b> - You can simply cut off the mold.</p>
+                </section>
+                <section id="acc4">
+                    <h2><a href="#acc4">Eggs</a></h2>
+                    <h3>Shelf Life:</h3>
+                    <p class="accordionP"> Up to 5 weeks past best before date</p>
+                    <h3>Storage:</h3>
+                    <p class="accordionP"> Fridge shelf in original packaging.
+                        Pointy side facing down to help
+                        the yolk stay in the middle.
+                        <h3>Freeze:</h3>
+                        <p class="accordionP"> Beat the eggs up before freezing.
+                            Freeze eggs in a muffins tray to keep separate.
+                            Egg whites by themselves do well in the freezer
+                            but egg yolkes by themselves need to be mixed with sugar or salt before frozen.
+                            <h3>Is it okay?</h3>
+                            <p class="accordionP"> Test the eggs in water
+                                before opening.
+                                If the eggs sink they're good.
+                                If the eggs float they should be thrown out.</p>
+                </section>
+                <section id="acc5">
+                    <h2><a href="#acc5">Fish</a></h2>
+                    <h3>Shelf Life:</h3>
+                    <p class="accordionP"> Check the packaging</p>
+                    <h3>Storage:</h3>
+                    <p class="accordionP"> Fridge shelf under 4.5°C
+                        In original packaging or wrapped tightly
+                        <h3>Freeze:</h3>
+                        <p class="accordionP"> Freeze fish in the
+                            original packaging or wrapped tightly.
+                            <h3>Is it okay?</h3>
+                            <p class="accordionP">Look at the date on the packaging.
+                                Signs that the fish has become bad:
+                                Slimy, discoloured, bad smell.</p>
+                </section>
+                <section id="acc6">
+                    <h2><a href="#acc6">Meat</a></h2>
+                    <h3>Shelf Life:</h3>
+                    <p class="accordionP"> Check the packaging</p>
+                    <h3>Storage:</h3>
+                    <p class="accordionP"> Store raw meat and poultry in clean, sealed containers on the bottom shelf of the fridge
+                        <h3>Freeze:</h3>
+                        <p class="accordionP"> Freeze it any time before its use by date
+                            defrost in the fridge overnight
+                            <h3>Is it okay?</h3>
+                            <p class="accordionP">If the meat smells bad,
+                                has a greenish hue or is sticky
+                                it is most likely not save to eat.</p>
+                </section>
+                <section id="acc7">
+                    <h2><a href="#acc7">Leafy greens</a></h2>
+                    <h3>Shelf Life:</h3>
+                    <p class="accordionP"> 3-5 days past best before date</p>
+                    <h3>Storage:</h3>
+                    <p class="accordionP"> Store in a fridge. To prolong it's life put a paper towel inside the bag. Even better option is to put in an airtight container with a paper towel layered on the top and bottom.
+                        <h3>Freeze:</h3>
+                        <p class="accordionP"> Even though leafy greens don’t hold their texture when frozen it can still be a good idea to freeze fresh herbs or spinach for smoothies or for cooking.
+                            <h3>Is it okay?</h3>
+                            <p class="accordionP">If the greens become soggy
+                                and smell bad they should be removed from the rest and thrown out.</p>
+                </section>
+                <section id="acc8">
+                    <h2><a href="#acc8">Vegetables</a></h2>
+                    <h3>Shelf Life:</h3>
+                    <p class="accordionP"> Store in the fridge.
+                        Except tomatoes and potatoes.</p>
+                    <h3>Storage:</h3>
+                    <p class="accordionP"> Most vegetable benefit from
+                        blanching before freezing.
+                        <h3>Freeze:</h3>
+                        <p class="accordionP"> Even though leafy greens don’t hold their texture when frozen it can still be a good idea to freeze fresh herbs or spinach for smoothies or for cooking.
+                            <h3>Is it okay?</h3>
+                            <p class="accordionP"><b>Mold?</b> -
+                                Firm vegetables: simply cut of the molded part<br>
+                                Soft vegetables: not safe to eat :(</p>
+                </section>
+                <section id="acc9">
+                    <h2><a href="#acc9">Fruits</a></h2>
+                    <h3>Shelf Life:</h3>
+                    <p class="accordionP"> Depends on the type</p>
+                    <h3>Storage:</h3>
+                    <p class="accordionP"> Most fruits keep well in the fridge.
+                        But some fruits should ripen
+                        on the counter:
+                        apricots, avocados, guava, kiwi,
+                        mangoes, melons, nectarines, papaya,
+                        peaches, bananas and plums
+                        <h3>Freeze:</h3>
+                        <p class="accordionP"> Think about how you will most likely use the fruit (in a dessert, smoothie etc) and prepare it accordingly.
+                            <h3>Is it okay?</h3>
+                            <p class="accordionP">
+                                <b>Mold?</b> - Not safe to eat :( <br>
+                                If the fruit has a bad smell and texture it should be thrown out unless you can cut off the bad part.
+                </section>
+                <section id="acc10">
+                    <h2><a href="#acc10">Leftovers</a></h2>
+                    <p class="accordionP">Keep your leftovers in an airthight container.
+                        Decide when you plan on eating it, if you don't think you will eat it over the next few days consider freezing them
+                    </p>
+                </section>
+
+            </article>
+        </div>
+        <div class="favoritesDiv">
+            <h1>Our favorites</h1>
+            <p>Below you have a selection of resources we think are useful.</p>
+            <div class="favImgWrapper">
+                <div class="favItem">
+                    <img src="img/image002.png" class="favImg">
+                    <span class="favCaption">Jolt_ e-book<br>
+
+
+                        In addition to raising awareness of food waste, Jolt_ and Foodsharing Copenhagen have created a digital recipe book with recipes from around the world
+                        <br>
+                        <a href="#" class="favBtn">Website</a>
+                    </span>
+                </div>
+                <div class="favItem">
+                    <img src="img/image003.png" class="favImg">
+                    <span class="favCaption">One Bowl<br>
+
+                        Collaboration dinners between One Bowl and Foodsharing Copenhagen bring the community together to see what interesting meals the chefs come up with!
+
+                        <br>
+                        <a href="http://onebowl.dk/" class="favBtn">Website</a>
+                    </span>
+                </div>
+                <div class="favItem">
+                    <img src="img/image004.png" class="favImg">
+                    <span class="favCaption">Plant Jammer<br>
+                        This app lets you select which ingredients you have in your kitchen and teaches you new recipes
+                        <br><a href="https://play.google.com/store/apps/details?id=com.plantjammer.plantjammer"><img src="img/googleplay.png" class="googlePlaybtn">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerDiv">            <img src="img/logo.png" style="float: right; height: 100px;">
+            CODE OF CONDUCT<br>
+        CODE OF ETHICS<br>
+        DATA PRIVACY POLICY <br>
+        <br>
+        CONTACT US
+
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body></html>
