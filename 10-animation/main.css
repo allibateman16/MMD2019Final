@@ -1,0 +1,192 @@
+img{
+  image-orientation: center;
+    margin-bottom: 50px;
+    margin-left: 150px;
+}
+
+body{
+    margin:50px;
+}
+
+.btn {
+    cursor: pointer;
+    width: 150px;
+    height: 75px;
+  float: left;
+    border-radius: 4px;
+    box-shadow: 10px, 10px;
+    background-color: #707070;
+    color: black;
+    opacity: 0.6;
+}
+
+
+aside {
+    padding: 5px;
+    grid-area: aside;
+    width: 250px;
+    margin: auto;
+
+}
+
+#threeButtonsArea {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+
+.playandstop {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 100%;
+}
+
+
+.active, .btn:hover {
+  background-color: darkgreen;
+    color: white;
+    opacity: 1.0;
+}
+
+
+#charlie {
+    width: 100px;
+    height: 300px;
+    background-color: white;
+    display: inline-block;
+}
+
+
+.rightslide {
+    animation: rightslide 5s ease infinite;
+}
+
+@keyframes rightslide {
+    50% {
+        transform: translateX(200%)
+    }
+}
+
+
+.flash {
+
+    animation: flash 2s ease infinite;
+}
+
+@keyframes flash {
+    50% {
+        opacity: 0;
+    }
+}
+
+.spin{
+    animation: spinaround 4s ease infinite;
+}
+
+@keyframes spinaround {
+    50% {
+        transform: rotate(360deg)
+    }
+}
+
+.scale{
+    animation: scalesmall 4s ease infinite;
+}
+
+@keyframes scalesmall{
+    50% {
+        transform: scale(.5)
+    }
+}
+
+.bounce{
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce{
+    25%{
+        transform: scale(2)
+    }
+
+    50%{
+        transform: scale(.75)
+    }
+
+}
+
+.jump{
+    animation: jump .5s infinite;
+}
+
+@keyframes jump{
+    50%{
+        transform: translateY(50%)
+    }
+}
+
+.tipover{
+    animation: tipover 5s infinite;
+}
+
+@keyframes tipover{
+    100%{
+    transform: rotate(95deg);
+    }
+}
+
+.shake{
+    animation: shake .10s infinite;
+}
+
+@keyframes shake{
+    50%{
+        transform: translateX(10%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+}
+
+.changeback{
+    animation: changeback 2s ease infinite;
+}
+
+@keyframes changeback{
+    100%{
+        background-color: aqua;
+    }
+}
+
+
+.bye{
+    animation: bye 10s infinite;
+}
+
+@keyframes bye{
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+
+svg{
+    width: 200vh;
+    margin-left: 200px;
+}
+
+.round{
+    fill: none;
+    stroke: black;
+    stroke-width: 1;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    transition: .5s linear;
+}
+
+.draw{
+    stroke-dashoffset: 0;
+}
